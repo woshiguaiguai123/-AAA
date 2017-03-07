@@ -7,6 +7,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
+
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -18,8 +19,10 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private BaiduMap baiduMap;
     // 避免多次调用animateMapStatus() 方法
     private boolean isFirstLocate = true;
+    private int aaa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
